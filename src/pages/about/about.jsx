@@ -29,7 +29,38 @@ const About = () => {
                         </div>
                     </div>
 
-                   
+                    {/* Content Section */}
+                    <div className="lg:w-1/2">
+                        <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
+                        <div className="space-y-6 text-gray-600">
+                            <p>
+                                Welcome to Fashe, where fashion meets passion! We're dedicated to providing you with 
+                                the best of both worlds: high-quality fashion pieces and an exceptional shopping experience. 
+                                Our journey began with a simple idea - to create a space where style-conscious individuals 
+                                could find unique, trendy pieces that reflect their personality.
+                            </p>
+                            <p>
+                                What sets us apart is our commitment to quality and customer satisfaction. Each piece in 
+                                our collection is carefully selected to ensure it meets our high standards. From casual 
+                                everyday wear to statement pieces that turn heads, we offer a diverse range of clothing 
+                                and accessories that cater to various styles and occasions.
+                            </p>
+                            <p>
+                                Our team consists of passionate fashion enthusiasts who understand that great style is 
+                                about more than just clothes - it's about how they make you feel. We're constantly 
+                                updating our collection to bring you the latest trends while maintaining timeless classics 
+                                that never go out of style.
+                            </p>
+                            <p>
+                                We believe in sustainable fashion and ethical practices. That's why we partner with 
+                                manufacturers who share our values and commitment to responsible production methods. 
+                                When you shop with us, you're not just buying clothes; you're supporting a vision of 
+                                fashion that respects both people and the planet.
+                            </p>
+                        </div>
+
+                       
+                    </div>
                 </div>
 
               
