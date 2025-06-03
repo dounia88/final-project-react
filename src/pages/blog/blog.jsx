@@ -97,7 +97,21 @@ const Blog = () => {
                         ))}
                     </div>
 
-                    
+                    {/* Sidebar */}
+                    <div className="lg:w-1/3">
+                        {/* Search */}
+                        <div className="mb-12">
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    placeholder="Search"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-red-500"
+                                />
+                                <button className="absolute right-3 top-1/2 -translate-y-1/2">
+                                    <i className="fas fa-search text-gray-400"></i>
+                                </button>
+                            </div>
+                        </div>
 
                        
 
