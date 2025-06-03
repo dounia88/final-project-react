@@ -59,7 +59,21 @@ const About = () => {
                             </p>
                         </div>
 
-                       
+                        {/* Stats Section */}
+                        <div className="grid grid-cols-3 gap-8 mt-12">
+                            <div className="text-center">
+                                <div className="text-4xl font-bold text-red-500 mb-2">2k+</div>
+                                <div className="text-sm text-gray-600">Happy Customers</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-4xl font-bold text-red-500 mb-2">500+</div>
+                                <div className="text-sm text-gray-600">Products</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-4xl font-bold text-red-500 mb-2">50+</div>
+                                <div className="text-sm text-gray-600">Brands</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
