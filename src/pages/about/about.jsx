@@ -77,7 +77,42 @@ const About = () => {
                     </div>
                 </div>
 
-              
+                {/* Values Section */}
+                <div className="mt-20">
+                    <h2 className="text-3xl font-semibold text-center mb-12">Our Values</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="text-center p-6">
+                            <div className="text-4xl text-red-500 mb-4">
+                                <i className="fas fa-heart"></i>
+                            </div>
+                            <h3 className="text-xl font-semibold mb-3">Passion for Fashion</h3>
+                            <p className="text-gray-600">
+                                We live and breathe fashion, constantly seeking out the latest trends 
+                                and timeless classics to bring you the best selection.
+                            </p>
+                        </div>
+                        <div className="text-center p-6">
+                            <div className="text-4xl text-red-500 mb-4">
+                                <i className="fas fa-star"></i>
+                            </div>
+                            <h3 className="text-xl font-semibold mb-3">Quality First</h3>
+                            <p className="text-gray-600">
+                                Every item in our collection is carefully selected and quality-checked 
+                                to ensure it meets our high standards.
+                            </p>
+                        </div>
+                        <div className="text-center p-6">
+                            <div className="text-4xl text-red-500 mb-4">
+                                <i className="fas fa-users"></i>
+                            </div>
+                            <h3 className="text-xl font-semibold mb-3">Customer Focus</h3>
+                            <p className="text-gray-600">
+                                Your satisfaction is our priority. We're committed to providing 
+                                exceptional service and support at every step.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
