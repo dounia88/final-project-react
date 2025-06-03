@@ -137,7 +137,21 @@ const Blog = () => {
                             </div>
                         </div>
 
-                        
+                        {/* Tags Cloud */}
+                        <div>
+                            <h3 className="text-lg font-semibold mb-6">Tags Cloud</h3>
+                            <div className="flex flex-wrap gap-2">
+                                {tags.map(tag => (
+                                    <Link 
+                                        key={tag}
+                                        to={`/blog/tag/${tag.toLowerCase()}`}
+                                        className="px-4 py-2 bg-gray-100 text-gray-600 text-sm hover:bg-red-500 hover:text-white transition-colors rounded"
+                                    >
+                                        {tag}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
