@@ -64,7 +64,39 @@ const Blog = () => {
                 </div>
             </div>
 
-            
+            {/* Blog Content */}
+            <div className="container mx-auto px-4 py-16">
+                <div className="flex flex-col lg:flex-row gap-12">
+                    {/* Main Content */}
+                    <div className="lg:w-2/3">
+                        {blogPosts.map(post => (
+                            <article key={post.id} className="mb-16">
+                                <div className="mb-6 overflow-hidden">
+                                    <img 
+                                        src={post.image} 
+                                        alt={post.title}
+                                        className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                                <div className="text-sm text-gray-500 mb-3">
+                                    <span>{post.date}</span>
+                                    <span className="mx-2">|</span>
+                                    <span>{post.category}</span>
+                                </div>
+                                <h2 className="text-2xl font-semibold mb-4 hover:text-red-500 transition-colors">
+                                    <Link to={`/blog/${post.id}`}>{post.title}</Link>
+                                </h2>
+                                <p className="text-gray-600 mb-6">{post.excerpt}</p>
+                                <Link 
+                                    to={`/blog/${post.id}`}
+                                    className="inline-block text-gray-800 hover:text-red-500 transition-colors"
+                                >
+                                    Continue Reading →
+                                </Link>
+                            </article>
+                        ))}
+                    </div>
+
                     
 
                        
