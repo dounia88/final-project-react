@@ -113,7 +113,29 @@ const Blog = () => {
                             </div>
                         </div>
 
-                       
+                        {/* Featured Products */}
+                        <div className="mb-12">
+                            <h3 className="text-lg font-semibold mb-6">Featured Products</h3>
+                            <div className="space-y-4">
+                                {featuredProducts.map(product => (
+                                    <div key={product.id} className="flex gap-4">
+                                        <Link to={`/shop/${product.id}`} className="w-20 h-20 flex-shrink-0">
+                                            <img 
+                                                src={product.image} 
+                                                alt={product.name}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </Link>
+                                        <div>
+                                            <h4 className="text-sm hover:text-red-500 transition-colors">
+                                                <Link to={`/shop/${product.id}`}>{product.name}</Link>
+                                            </h4>
+                                            <p className="text-gray-600">${product.price.toFixed(2)}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
 
                         
                     </div>
