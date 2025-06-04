@@ -35,7 +35,7 @@ const Contact = () => {
     return (
         <div>
             {/* Header Image */}
-            <div className="bg-[url('/src/assets/images/contacttop.webp')] bg-cover bg-center h-[300px] flex items-center justify-center">
+            <div className="bg-[url('/src/assets/images/contacttop.webp')] bg-cover bg-center h-[300px] flex items-center justify-center bg-black">
                 <h1 className='font-bold text-4xl md:text-5xl text-amber-50'>CONTACT</h1>
             </div>
 
